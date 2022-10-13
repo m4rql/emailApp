@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link href="multiselect-master/styles/multiselect.css" rel="stylesheet" />
+    <link href="multiselect-master/styles/multiselect.css" />
     <link rel="shortcut icon" type=image/ico
     href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico/>
     <meta name="viewport" content="width=1440, maximum-scale=1.0" />
@@ -160,7 +160,7 @@
               <br />
             </div>
           </div>
-          <div class="overlap-group" onclick="changeText(); addMultiple()">
+          <div class="overlap-group" onclick="addMultiple();">
             <h1 class="title">Compose</h1>
           </div>
           <div class="rectangle-7">
@@ -171,16 +171,17 @@
     </div>
     <script src="multiselect-master/multiselect.min.js"></script>
     <script>
-      let selected9 = [];
       function addMultiple() {
+        const selected9 = [];
         for (let option of document.getElementById("testSelect1").options) {
-          if (option.selected9) {
+          if (option.selected) {
             selected9.push(option.value);
           }
         }
-        console.log(selected9);
+        changeText(selected9);
       }
-      function changeText() {
+      function changeText(selected9) {
+        console.log('changeText', selected9)
         let selected1 = document.getElementById("list1").value;
         let selected2 = document.getElementById("list2").value;
         let selected3 = document.getElementById("list3").value;
