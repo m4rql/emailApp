@@ -1,0 +1,105 @@
+/* screen - landingpage1 */
+
+.landingpage1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  width: 1440px;
+}
+
+.landingpage1 .nav-bar {
+  -webkit-backdrop-filter: blur(40px) brightness(100%);
+  align-items: flex-start;
+  backdrop-filter: blur(40px) brightness(100%);
+  background: linear-gradient(
+    180deg,
+    rgba(243.31, 130.78, 130.78, 0.4) 0%,
+    rgba(146.62, 146.62, 146.62, 0.1) 99.51%
+  );
+  box-shadow: 0px 22px 24px -1px #00000040;
+  display: flex;
+  height: 182px;
+  min-width: 1440px;
+  padding: 33px 60px;
+}
+
+.landingpage1 .ezugi-new-1 {
+  height: 115px;
+  object-fit: cover;
+  width: 250px;
+}
+
+.landingpage1 .flex-row {
+  align-items: center;
+  display: flex;
+  margin-top: 106px;
+  min-width: 1388px;
+}
+
+.landingpage1 .rectangle-6 {
+  -webkit-backdrop-filter: blur(40px) brightness(100%);
+  backdrop-filter: blur(40px) brightness(100%);
+  background: linear-gradient(
+    180deg,
+    rgba(209.31, 207.57, 207.57, 0.4) 0%,
+    rgba(201.88, 195.15, 195.15, 0.34) 20.31%,
+    rgba(255, 255, 255, 0.1) 99.51%
+  );
+  border-radius: 40px;
+  box-shadow: 0px 4px 24px -1px #00000040;
+  height: 590px;
+  width: 568px;
+}
+
+.landingpage1 .overlap-group {
+  -webkit-backdrop-filter: blur(15px) brightness(100%);
+  align-items: center;
+  backdrop-filter: blur(15px) brightness(100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(221.94, 226.31, 171.62) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-radius: 40px;
+  box-shadow: inset 0px 22px 24px -1px #00000040, 0px 4px 4px #00000040;
+  display: flex;
+  height: 68px;
+  justify-content: flex-end;
+  margin-left: 26px;
+  min-width: 200px;
+}
+
+.landingpage1 .title {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  min-height: 34px;
+  width: 176px;
+}
+
+.landingpage1 .rectangle-7 {
+  -webkit-backdrop-filter: blur(40px) brightness(100%);
+  backdrop-filter: blur(40px) brightness(100%);
+  background: linear-gradient(
+    180deg,
+    rgba(209.31, 207.57, 207.57, 0.4) 0%,
+    rgba(201.88, 195.15, 195.15, 0.34) 20.31%,
+    rgba(255, 255, 255, 0.1) 99.51%
+  );
+  border-radius: 40px;
+  box-shadow: 0px 4px 24px -1px #00000040;
+  height: 590px;
+  margin-left: 26px;
+  width: 568px;
+}
+
+.landingpage1 .corp1 {
+  margin-left: 20px;
+}
+.landingpage1 .corp2 {
+  margin-left: 10px;
+}

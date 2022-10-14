@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="multiselect-master/styles/multiselect.css" rel="stylesheet" />
+    <link rel="shortcut icon" type=image/ico
+    href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico/>
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="landingpage1.css" />
+    <link rel="stylesheet" type="text/css" href="styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="globals.css" />
+  </head>
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="landingpage1" />
+
+    <div class="container-center-horizontal">
+      <div class="landingpage1 screen">
+        <div class="nav-bar">
+          <img
+            class="ezugi-new-1"
+            src="https://anima-uploads.s3.amazonaws.com/projects/62e95f99cbf9a329dcea853b/releases/62ea47a3fc13ad9d4cfd2489/img/ezuginew-1@2x.png"
+          />
+        </div>
+        <div class="flex-row">
+          <div class="rectangle-6">
+            <br />
+            <div class="corp1">
+              Title: Important: Ezugi Downtime Notification -
+              <select name="studio" id="list1" onchange="getSelectValue();">
+                <option value="RL">Studio1</option>
+                <option value="BJ">Studio2</option>
+                <option value="CH">Studio3</option>
+                <option value="ODTP">Studio4</option>
+              </select>
+              Studio, Multiple tables on
+              <select name="date" id="list2" onchange="getSelectValue();">
+                <option value="Date1">Date1</option>
+                <option value="Date2">Date2</option>
+                <option value="Date3">Date3</option>
+                <option value="Date4">Date4</option></select
+              >, 2022 from
+              <select name="startTime" id="list3" onchange="getSelectValue();">
+                <option value="Hour1">Hour1</option>
+                <option value="Hour2">Hour2</option>
+                <option value="Hour3">Hour3</option>
+                <option value="Hour4">Hour4</option>
+              </select>
+              to
+              <select name="endTime" id="list4" onchange="getSelectValue();">
+                <option value="Hour1">Hour1</option>
+                <option value="Hour2">Hour2</option>
+                <option value="Hour3">Hour3</option>
+                <option value="TBA">TBA</option>
+              </select>
+              <br />
+              <br />
+              <br />
+              Dear Partners,
+              <br />
+              <br />
+              We would like to inform you that the following tables will be
+              unavailable for customers due to planned maintenance.
+              <br />
+              <br />
+              <p>
+                Date:
+                <select
+                  name="startTime"
+                  id="list5"
+                  onchange="getSelectValue();"
+                >
+                  <option value="Hour1">Hour1</option>
+                  <option value="Hour2">Hour2</option>
+                  <option value="Hour3">Hour3</option>
+                  <option value="Hour4">Hour4</option>
+                </select>
+                2022
+              </p>
+              <p>
+                Start time UTC:<select
+                  name="startTime"
+                  id="list6"
+                  onchange="getSelectValue();"
+                >
+                  <option value="Hour1">Hour1</option>
+                  <option value="Hour2">Hour2</option>
+                  <option value="Hour3">Hour3</option>
+                  <option value="Hour4">Hour4</option>
+                </select>
+              </p>
+              <p>
+                End time UTC:
+                <select
+                  name="startTime"
+                  id="list7"
+                  onchange="getSelectValue();"
+                >
+                  <option value="Hour1">Hour1</option>
+                  <option value="Hour2">Hour2</option>
+                  <option value="Hour3">Hour3</option>
+                  <option value="TBA">TBA</option>
+                </select>
+              </p>
+              <p>
+                Total time:
+                <select
+                  name="startTime"
+                  id="list8"
+                  onchange="getSelectValue();"
+                >
+                  <option value="Hour1">Hour1</option>
+                  <option value="Hour2">Hour2</option>
+                  <option value="Hour3">Hour3</option>
+                  <option value="Hour4">Hour4</option>
+                </select>
+              </p>
+              <p>
+                Tables:
+                <select
+                  id="testSelect1"
+                  multiple="multiple"
+                  onchange="getSelectValue();"
+                >
+                  <option value="RL">RL</option>
+                  <option value="BJ">BJ</option>
+                  <option value="CH">CH</option>
+                  <option value="ODTP">ODTP</option>
+                </select>
+              </p>
+              <p>
+                Table location:
+                <select
+                  name="tableLocation"
+                  id="list10"
+                  onchange="getSelectValue();"
+                >
+                  <option value="Country1">Country1</option>
+                  <option value="Country2">Country2</option>
+                  <option value="Country3">Country3</option>
+                  <option value="Country4">Country4</option>
+                </select>
+              </p>
+              <p>Reason: Technical Maintenance</p>
+              <br />
+              <br />
+              We apologize for the inconvenience and thank you for your
+              understanding!
+              <br />
+              <br />
+              <br />
+              --
+              <p>Kind regards,</p>
+              <p>Ezugi Service Desk</p>
+
+              <br />
+            </div>
+          </div>
+          <div class="overlap-group" onclick="addMultiple(); changeText()">
+            <h1 class="title">Compose</h1>
+          </div>
+          <div class="rectangle-7">
+            <span id="test" type="text"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="multiselect-master/multiselect.min.js"></script>
+    <script>
+      let selected9 = [];
+      function addMultiple() {
+        for (let option of document.getElementById("testSelect1").options) {
+          if (option.selected) {
+            selected9.push(option.value);
+          }
+        }
+        console.log(selected9);
+      }
+      function changeText() {
+        let selected1 = document.getElementById("list1").value;
+        let selected2 = document.getElementById("list2").value;
+        let selected3 = document.getElementById("list3").value;
+        let selected4 = document.getElementById("list4").value;
+        let selected5 = document.getElementById("list5").value;
+        let selected6 = document.getElementById("list6").value;
+        let selected7 = document.getElementById("list7").value;
+        let selected8 = document.getElementById("list8").value;
+        // let selected9 = document.getElementById("testSelect1").value;
+        let selected10 = document.getElementById("list10").value;
+        document.getElementById(
+          "test"
+        ).innerText = ` Title: Important: Ezugi Downtime Notification - ${selected1} ${selected2}, 2022 from ${selected3} to ${selected4}
+
+                          Dear Partners,
+
+                          We would like to inform you that the following table will be unavailable for customers due to planned maintenance.
+
+                          Date: ${selected5} 2022
+                          Start time UTC: ${selected6}
+                          End time UTC: ${selected7}
+                          Total time: ${selected8}
+                          Tables: ${selected9}
+                          Table location: ${selected10}
+                          Reason: Technical Maintenance
+
+
+                          We apologize for the inconvenience and thank you for your understanding!
+
+
+                          --
+                          Kind regards,
+                          Ezugi Service Desk
+                          `;
+      }
+
+      document.multiselect("#testSelect1");
+    </script>
+  </body>
+</html>
