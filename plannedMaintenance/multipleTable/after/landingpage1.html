@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-
+    <link href="multiselect-master/styles/multiselect.css" rel="stylesheet" />
     <link rel="shortcut icon" type=image/ico
     href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico/>
     <meta name="viewport" content="width=1440, maximum-scale=1.0" />
@@ -120,10 +120,10 @@
                 </select>
               </p>
               <p>
-                Table:
+                Tables:
                 <select
-                  name="tableName"
-                  id="list9"
+                  id="testSelect1"
+                  multiple="multiple"
                   onchange="getSelectValue();"
                 >
                   <option value="RL">RL</option>
@@ -160,7 +160,7 @@
               <br />
             </div>
           </div>
-          <div class="overlap-group" onclick="changeText()">
+          <div class="overlap-group" onclick="addMultiple(); changeText()">
             <h1 class="title">Compose</h1>
           </div>
           <div class="rectangle-7">
@@ -169,7 +169,17 @@
         </div>
       </div>
     </div>
+    <script src="multiselect-master/multiselect.min.js"></script>
     <script>
+      let selected9 = [];
+      function addMultiple() {
+        for (let option of document.getElementById("testSelect1").options) {
+          if (option.selected) {
+            selected9.push(option.value);
+          }
+        }
+        console.log(selected9);
+      }
       function changeText() {
         let selected1 = document.getElementById("list1").value;
         let selected2 = document.getElementById("list2").value;
@@ -179,7 +189,7 @@
         let selected6 = document.getElementById("list6").value;
         let selected7 = document.getElementById("list7").value;
         let selected8 = document.getElementById("list8").value;
-        let selected9 = document.getElementById("list9").value;
+        // let selected9 = document.getElementById("testSelect1").value;
         let selected10 = document.getElementById("list10").value;
         document.getElementById(
           "test"
@@ -193,7 +203,7 @@
                           Start time UTC: ${selected6}
                           End time UTC: ${selected7}
                           Total time: ${selected8}
-                          Table: ${selected9}
+                          Tables: ${selected9}
                           Table location: ${selected10}
                           Reason: Technical Maintenance
 
@@ -206,6 +216,8 @@
                           Ezugi Service Desk
                           `;
       }
+
+      document.multiselect("#testSelect1");
     </script>
   </body>
 </html>
