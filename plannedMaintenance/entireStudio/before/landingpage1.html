@@ -1,200 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
 
-    <link rel="shortcut icon" type=image/ico
-    href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico/>
-    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/ico"
-      href="https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico"
-    />
-    <link rel="stylesheet" type="text/css" href="landingpage1.css" />
-    <link rel="stylesheet" type="text/css" href="styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="globals.css" />
-  </head>
-  <body style="margin: 0; background: #ffffff">
-    <input type="hidden" id="anPageName" name="page" value="landingpage1" />
+<head>
+  <meta charset="utf-8" />
 
-    <div class="container-center-horizontal">
-      <div class="landingpage1 screen">
-        <div class="nav-bar">
-          <img
-            class="ezugi-new-1"
-            src="https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png"
-          />
-        </div>
-        <div class="flex-row">
-          <div class="rectangle-6">
+  <link rel="shortcut icon" type=image/ico
+    href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico />
+  <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/ico"
+    href="https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="landingpage1.css" />
+  <link rel="stylesheet" type="text/css" href="styleguide.css" />
+  <link rel="stylesheet" type="text/css" href="globals.css" />
+</head>
+
+<body style="margin: 0; background: #ffffff">
+  <input type="hidden" id="anPageName" name="page" value="landingpage1" />
+
+  <div class="container-center-horizontal">
+    <div class="landingpage1 screen">
+      <div class="nav-bar">
+        <img class="ezugi-new-1" src="https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png" />
+      </div>
+      <div class="flex-row">
+        <div class="rectangle-6">
+          <br />
+          <div class="corp1">
+            Title: Important: Ezugi Downtime Notification -
+            <select name="tableName" id="list1" onchange="getSelectValue();">
+              <option value="RL">RL</option>
+              <option value="BJ">BJ</option>
+              <option value="CH">CH</option>
+              <option value="ODTP">ODTP</option>
+            </select>
+            <input type="date" name="date-title" id="list2">, from
+            <input type="time" name="time-from" id="list3">
+            to
+            <input type="time" name="time-to" id="list4">
+            <select name="endTime" id="list5" onchange="getSelectValue();">
+              <option value=""> </option>
+              <option value="TBA">TBA</option>
+            </select>
             <br />
-            <div class="corp1">
-              Title: Important: Ezugi Downtime Notification -
-              <label for="tableName"></label>
-              <select name="tableName" id="list1" onchange="getSelectValue();">
+            <br />
+            <br />
+            Dear Partners,
+            <br />
+            <br />
+            We would like to inform you that the following table will be
+            unavailable for customers due to planned maintenance.
+            <br />
+            <br />
+            <p>
+              Date:
+
+            </p>
+            <p>
+              Start time UTC:
+            </p>
+            <p>
+              End time UTC:
+            </p>
+            <p>
+              Total time:
+              <input type="text" name="totalTime" id="list6">
+              minutes
+            </p>
+            <p>
+              Table:
+              <select name="tableName" id="list7" onchange="getSelectValue();">
                 <option value="RL">RL</option>
                 <option value="BJ">BJ</option>
                 <option value="CH">CH</option>
                 <option value="ODTP">ODTP</option>
               </select>
-              <select name="date" id="list2" onchange="getSelectValue();">
-                <option value="Date1">Date1</option>
-                <option value="Date2">Date2</option>
-                <option value="Date3">Date3</option>
-                <option value="Date4">Date4</option></select
-              >, 2022 from
-              <select name="startTime" id="list3" onchange="getSelectValue();">
-                <option value="Hour1">Hour1</option>
-                <option value="Hour2">Hour2</option>
-                <option value="Hour3">Hour3</option>
-                <option value="Hour4">Hour4</option>
+            </p>
+            <p>
+              Table location:
+              <select name="tableLocation" id="list8" onchange="getSelectValue();">
+                <option value="Belgium">Belgium</option>
+                <option value="Colombia">Colombia</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="Portomaso">Portomaso</option>
+                <option value="Romania">Romania</option>
+                <option value="Peru">Peru</option>
+                <option value="Chile">Chile</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Latvia">Latvia</option>
               </select>
-              to
-              <select name="endTime" id="list4" onchange="getSelectValue();">
-                <option value="Hour1">Hour1</option>
-                <option value="Hour2">Hour2</option>
-                <option value="Hour3">Hour3</option>
-                <option value="TBA">TBA</option>
-              </select>
-              <br />
-              <br />
-              <br />
-              Dear Partners,
-              <br />
-              <br />
-              We would like to inform you that the following table will be
-              unavailable for customers due to planned maintenance.
-              <br />
-              <br />
-              <p>
-                Date:
-                <select
-                  name="startTime"
-                  id="list5"
-                  onchange="getSelectValue();"
-                >
-                  <option value="Hour1">Hour1</option>
-                  <option value="Hour2">Hour2</option>
-                  <option value="Hour3">Hour3</option>
-                  <option value="Hour4">Hour4</option>
-                </select>
-                2022
-              </p>
-              <p>
-                Start time UTC:<select
-                  name="startTime"
-                  id="list6"
-                  onchange="getSelectValue();"
-                >
-                  <option value="Hour1">Hour1</option>
-                  <option value="Hour2">Hour2</option>
-                  <option value="Hour3">Hour3</option>
-                  <option value="Hour4">Hour4</option>
-                </select>
-              </p>
-              <p>
-                End time UTC:
-                <select
-                  name="startTime"
-                  id="list7"
-                  onchange="getSelectValue();"
-                >
-                  <option value="Hour1">Hour1</option>
-                  <option value="Hour2">Hour2</option>
-                  <option value="Hour3">Hour3</option>
-                  <option value="TBA">TBA</option>
-                </select>
-              </p>
-              <p>
-                Total time:
-                <select
-                  name="startTime"
-                  id="list8"
-                  onchange="getSelectValue();"
-                >
-                  <option value="Hour1">Hour1</option>
-                  <option value="Hour2">Hour2</option>
-                  <option value="Hour3">Hour3</option>
-                  <option value="Hour4">Hour4</option>
-                </select>
-              </p>
-              <p>
-                Table:
-                <select
-                  name="tableName"
-                  id="list9"
-                  onchange="getSelectValue();"
-                >
-                  <option value="RL">RL</option>
-                  <option value="BJ">BJ</option>
-                  <option value="CH">CH</option>
-                  <option value="ODTP">ODTP</option>
-                </select>
-              </p>
-              <p>
-                Table location:
-                <select
-                  name="tableLocation"
-                  id="list10"
-                  onchange="getSelectValue();"
-                >
-                  <option value="Country1">Country1</option>
-                  <option value="Country2">Country2</option>
-                  <option value="Country3">Country3</option>
-                  <option value="Country4">Country4</option>
-                </select>
-              </p>
-              <p>Reason: Technical Maintenance</p>
-              <br />
-              <br />
-              We apologize for the inconvenience and thank you for your
-              understanding!
-              <br />
-              <br />
-              <br />
-              --
-              <p>Kind regards,</p>
-              <p>Ezugi Service Desk</p>
+            </p>
+            <p>Reason: 
+              <select name="maintenanceReason" id="list9" onchange="getSelectValue();">
 
-              <br />
-            </div>
+                <option value="technical-maintenance">Technical maintenance</option>
+                <option value="disinfection">Disinfection</option>
+                <option value="option03">-</option>
+
+              </select>              
+            </p>
+            <br />
+            <br />
+            We apologize for the inconvenience and thank you for your
+            understanding!
+            <br />
+            <br />
+            <br />
+            --
+            <p>Kind regards,</p>
+            <p>Ezugi Service Desk</p>
+            <br />
           </div>
-          <div class="overlap-group" onclick="changeText()">
-            <h1 class="title">Compose</h1>
-          </div>
-          <div class="rectangle-7">
-            <span id="test" type="text"></span>
-          </div>
+        </div>
+        <div class="overlap-group" onclick="changeText()">
+          <h1 class="title">Compose</h1>
+        </div>
+        <div class="rectangle-7">
+          <span id="test" type="text"></span>
         </div>
       </div>
     </div>
-    <script>
-      function changeText() {
-        let selected1 = document.getElementById("list1").value;
-        let selected2 = document.getElementById("list2").value;
-        let selected3 = document.getElementById("list3").value;
-        let selected4 = document.getElementById("list4").value;
-        let selected5 = document.getElementById("list5").value;
-        let selected6 = document.getElementById("list6").value;
-        let selected7 = document.getElementById("list7").value;
-        let selected8 = document.getElementById("list8").value;
-        let selected9 = document.getElementById("list9").value;
-        let selected10 = document.getElementById("list10").value;
-        document.getElementById(
-          "test"
-        ).innerText = ` Title: Important: Ezugi Downtime Notification - ${selected1} ${selected2}, 2022 from ${selected3} to ${selected4}
+  </div>
+  <script>
+    function changeText() {
+      let selected1 = document.getElementById("list1").value;
+      let selected2 = document.getElementById("list2").value;
+      let selected3 = document.getElementById("list3").value;
+      let selected4 = document.getElementById("list4").value;
+      let selected5 = document.getElementById("list5").value;
+      let selected6 = document.getElementById("list6").value;
+      let selected7 = document.getElementById("list7").value;
+      let selected8 = document.getElementById("list8").value;
+      document.getElementById(
+        "test"
+      ).innerText = ` Title: Important: Ezugi Downtime Notification - ${selected1} ${selected2}, from ${selected3} to ${selected4} ${selected5}
 
         Dear Partners,
 
         We would like to inform you that the following table will be unavailable for customers due to planned maintenance.
 
-        Date: ${selected5} 2022
-        Start time UTC: ${selected6}
-        End time UTC: ${selected7}
-        Total time: ${selected8}
-        Table: ${selected9}
-        Table location: ${selected10}
+        Date: ${selected2} 
+        Start time UTC: ${selected3}
+        End time UTC: ${selected4} ${selected5}
+        Total time: ${selected6} minutes
+        Table: ${selected7}
+        Table location: ${selected8}
         Reason: Technical Maintenance
 
 
@@ -205,7 +157,8 @@
         Kind regards,
         Ezugi Service Desk
         `;
-      }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
