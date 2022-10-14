@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="BogdanMarcu" />
+    <meta
+      name="description"
+      content="Ezugi Internal tool, email template generator"
+    />
+    <link rel="shortcut icon" type=image/ico
+    href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico
+    />
+    <meta name="viewport" content="width=1440, maximum-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="landingpage1.css" />
+    <link rel="stylesheet" type="text/css" href="styleguide.css" />
+    <link rel="stylesheet" type="text/css" href="globals.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="BogdanMarcu" />
-  <meta name="description" content="Ezugi Internal tool, email template generator" />
-  <link rel="shortcut icon" type=image/ico
-    href=https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico />
-  <meta name="viewport" content="width=1440, maximum-scale=1.0" />
-  <link rel="shortcut icon" type="image/ico"
-    href="https://s3-eu-west-1.amazonaws.com/bo.images.public/images/favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="landingpage1.css" />
-  <link rel="stylesheet" type="text/css" href="styleguide.css" />
-  <link rel="stylesheet" type="text/css" href="globals.css" />
-</head>
+  <body style="margin: 0; background: #ffffff">
+    <input type="hidden" id="anPageName" name="page" value="landingpage1" />
+    <div class="container-center-horizontal">
+      <div class="landingpage1 screen">
+        <div class="nav-bar">
+          <img
+            class="ezugi-new-1"
+            src="https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png"
+          />
+          <!-- https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png -> Ezugi hosted logo-->
+        </div>
+        <h1 class="title montserrat-bold-black-64px">
+          Please select the incident type:
+        </h1>
 
-<body style="margin: 0; background: #ffffff">
-  <input type="hidden" id="anPageName" name="page" value="landingpage1" />
-  <div class="container-center-horizontal">
-    <div class="landingpage1 screen">
-      <div class="nav-bar">
-        <img class="ezugi-new-1" src="https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png" />
-        <!-- https://ezugi.com/wp-content/uploads/2021/08/ezugi-logo-color.png -> Ezugi hosted logo-->
+        <ul>
+          <li>
+            <a
+              class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
+              href="plannedMaintenance/plannedselector-index.html"
+              >Planned Maintenance</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
+              href="unplannedMaintenance/unplannedselector-index.html"
+              >Unplanned Maintenance</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
+              href="monthlyMaintenance/monthlyselector-index.html"
+              >Monthly Maintenance</a
+            >
+          </li>
+        </ul>
       </div>
-      <h1 class="title montserrat-bold-black-64px">
-        Please select the incident type:
-      </h1>
-
-      <ul>
-
-        <li>
-          <a class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
-            href="plannedMaintenance/plannedselector-index.html">Planned Maintenance</a>
-        </li>
-
-        <li>
-          <a class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
-            href="unplannedMaintenance/unplannedselector-index.html">Unplanned Maintenance</a>
-        </li>
-
-        <li>
-          <a class="buton-unu overlap-group border-1px-black x-maintenance inter-normal-black-40px"
-            href="monthlyMaintenance/monthlyselector-index.html">Monthly Maintenance</a>
-        </li>
-
-      </ul>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
